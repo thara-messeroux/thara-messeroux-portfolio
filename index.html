@@ -332,7 +332,7 @@
                                 <li data-filter=".web" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>Web Development</span></li>
                                 <li data-filter=".mobile" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><span>Mobile Development</span></li>
                                 <li data-filter=".game" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Game Development</span></li>
-                                <li data-filter=".data" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Database Management</span></li>
+                                <!-- <li data-filter=".data" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Database Management</span></li> -->
                             </ul>
                         </div>
                         <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
@@ -383,6 +383,28 @@
                                             <h5 class="title">Tuiter</h5>
                                             <span class="sub-title">Web Development</span>
                                             <a data-fancybox data-src="#mh-tuiter"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui web">
+                                    <figure>
+                                        <img src="assets/images/abos-offer-configuration-aws-architecture-second.png" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">ABOS Offer Configuration</h5>
+                                            <span class="sub-title">Web Development</span>
+                                            <a data-fancybox data-src="#mh-abos"></a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui web">
+                                    <figure>
+                                        <img src="assets/images/game-development-hide-and-seek-cover .jpeg" alt="img04">
+                                        <figcaption class="fig-caption">
+                                            <i class="fa fa-search"></i>
+                                            <h5 class="title">Hide and Seek</h5>
+                                            <span class="sub-title">Game Development</span>
+                                            <a data-fancybox data-src="#mh-hide-and-seek"></a>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -647,8 +669,6 @@
                                     <li><span>git</span></li>
                                 </ul>
                             </div>
-                            <!-- Todo -->
-                            <!-- Link to Github will go in href -->
                             <a href="" class="btn btn-fill">Live Demo</a>
                         </div>
                         <div class="col-sm-7">
@@ -663,14 +683,125 @@
                                 </p>    
                                 <img src="assets/images/tuiter-website-profile-hd.jpeg" alt="" class="img-fluid">
                                 <p>This page is the user's profile, displaying their tweets, and the main info about the user. Their name, username,
-                                    status, the ability to edit their profile. Each tweet had the ability to be liked, shared, or retweeted. We also 
-                                    have the ability to search for other users through the search bar, and see basic information about their profile
-                                    such as name, username, and number of followers. </p>     
+                                    status, the ability to edit their profile. Each tweet had the ability to be liked, shared, or retweeted. </p>  
+                                <img src="assets/images/tuiter-website-user-search.jpeg" alt="" class="img-fluid">
+                                <p>The app also has the ability to search for other users through the search bar, and see basic information about their profile
+                                    such as name, username, and number of followers. </p>    
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="mh-portfolio-modal" id="mh-abos">
+                <div class="container">
+                    <div class="row mh-portfolio-modal-inner">
+                        <div class="col-sm-5">
+                            <h2>ABOS Offer Configuration</h2>
+                            <p>Designed, created, tested, and launched an internal full-stack infrastructure for Amazon to streamline the 
+                                configuration of ABOS (Audible Buying Options Service) offers, which allowed Audible employees to save time 
+                                creating, adding, updating, and displaying offers.</p>       
+                            <div class="mh-about-tag">
+                                <ul>
+                                    <li><span>javascript</span></li>
+                                    <li><span>typescript</span></li>
+                                    <li><span>html</span></li>
+                                    <li><span>css</span></li>
+                                    <li><span>react</span></li>
+                                    <li><span>git</span></li>
+                                </ul>
+                            </div>
+                            <a href="" class="btn btn-fill">Live Demo</a>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="mh-portfolio-modal-img">
+                                <img src="assets/images/abos-offer-configuration-aws-architecture-second.png" alt="" class="img-fluid">
+                                <p> The plan is from the Web Browser, the user hits the DNS/URL. 
+                                    The used Route 53 to create the DNS.
+                                    Go through a Midway Authentication to authenticate the user
+                                    Once the user is authenticated.
+                                    The user can access the website hosted on Cloudfront. Cloudfront improves performance. It allows us to have https on the website, 
+                                    which makes the website more secure. It will point to our S3 bucket which contains our website files. The HTML and static content 
+                                    is deployed and stored in S3.</p>
+                                <img src="assets/images/abos-offer-configuration-ui-design-first.png" alt="" class="img-fluid">
+                                <p>I designed the UI of the app, to create a foundation before using it.</p>
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-default.png" alt="" class="img-fluid">
+                                <p>The app makes it very straightforward for the user, in this case an Audible, or Amazon employee to create an offer by providing
+                                    the customer's id, the book's asin number, the marketplace used, and the current device used by the customer, as requirement. 
+                                    And optionally the user will also provide the offer type, and program type.</p>   
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-lists-of-offers.png" alt="" class="img-fluid">
+                                <p>Once the offer is created, we get the list of offers of that specific customer. Each offer is displayed with the offer's 
+                                    buyability, id, price, and offer type.</p>  
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-lists-of-offers-responsive.png" alt="" class="img-fluid">
+                                <p>The app was made using Java for the backend, and react, javascript, html and css, for the first version of the UI. It is also 
+                                    responsive to different screen sizes. </p>
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-please-fill-out-this-field.png" alt="" class="img-fluid">
+                                <p>The user is notified of the required input, if he tries to submit the form without the proper information.</p>
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-katal.png" alt="" class="img-fluid">
+                                <p>The app was made using Java for the backend, and katal, react, typescript, html and css, for the second version of the UI.</p>
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-list-of-offers-katal.png" alt="" class="img-fluid">
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-updated-katal.png" alt="" class="img-fluid">
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-list-of-offers-interactive-katal.png" alt="" class="img-fluid">
+                                <p>This second version of the app is also responsive to different screen sizes. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mh-portfolio-modal" id="mh-hide-and-seek">
+                <div class="container">
+                    <div class="row mh-portfolio-modal-inner">
+                        <div class="col-sm-5">
+                            <h2>Hide and Seek</h2>
+                            <p>Worked with Unity3D to design and build this game, for user to play hide and seek with multiple AIs  in a garden.</p>       
+                            <div class="mh-about-tag">
+                                <ul>
+                                    <li><span>Unreal Engine</span></li>
+                                    <li><span>typescript</span></li>
+                                    <li><span>html</span></li>
+                                    <li><span>css</span></li>
+                                    <li><span>react</span></li>
+                                    <li><span>git</span></li>
+                                </ul>
+                            </div>
+                            <a href="" class="btn btn-fill">Live Demo</a>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="mh-portfolio-modal-img">
+                                <img src="assets/images/abos-offer-configuration-aws-architecture-second.png" alt="" class="img-fluid">
+                                <p> The plan is from the Web Browser, the user hits the DNS/URL. 
+                                    The used Route 53 to create the DNS.
+                                    Go through a Midway Authentication to authenticate the user
+                                    Once the user is authenticated.
+                                    The user can access the website hosted on Cloudfront. Cloudfront improves performance. It allows us to have https on the website, 
+                                    which makes the website more secure. It will point to our S3 bucket which contains our website files. The HTML and static content 
+                                    is deployed and stored in S3.</p>
+                                <img src="assets/images/abos-offer-configuration-ui-design-first.png" alt="" class="img-fluid">
+                                <p>I designed the UI of the app, to create a foundation before using it.</p>
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-default.png" alt="" class="img-fluid">
+                                <p>The app makes it very straightforward for the user, in this case an Audible, or Amazon employee to create an offer by providing
+                                    the customer's id, the book's asin number, the marketplace used, and the current device used by the customer, as requirement. 
+                                    And optionally the user will also provide the offer type, and program type.</p>   
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-lists-of-offers.png" alt="" class="img-fluid">
+                                <p>Once the offer is created, we get the list of offers of that specific customer. Each offer is displayed with the offer's 
+                                    buyability, id, price, and offer type.</p>  
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-lists-of-offers-responsive.png" alt="" class="img-fluid">
+                                <p>The app was made using Java for the backend, and react, javascript, html and css, for the first version of the UI. It is also 
+                                    responsive to different screen sizes. </p>
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-please-fill-out-this-field.png" alt="" class="img-fluid">
+                                <p>The user is notified of the required input, if he tries to submit the form without the proper information.</p>
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-katal.png" alt="" class="img-fluid">
+                                <p>The app was made using Java for the backend, and katal, react, typescript, html and css, for the second version of the UI.</p>
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-list-of-offers-katal.png" alt="" class="img-fluid">
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-updated-katal.png" alt="" class="img-fluid">
+                                <img src="assets/images/abos-offer-configuration-sign-up-page-list-of-offers-interactive-katal.png" alt="" class="img-fluid">
+                                <p>This second version of the app is also responsive to different screen sizes. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <!--
         ===================
