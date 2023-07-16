@@ -1,33 +1,20 @@
 <?php
-	$name = $_POST["name"];
-	$email = $_POST["email"];
-	$message = $_POST["message"];
-	 
-	$EmailTo = "youremail@gmail.com"; // change with your email
-	$Subject = "Portfolio CV/Resume";
-	 
-	// prepare email body text
-	
-	$Body .= "Name: ";
-	$Body .= $name;
-	$Body .= "\n"; 
-	 
-	$Body .= "Email: ";
-	$Body .= $email;
-	$Body .= "\n";
-	 
-	$Body .= "Message: ";
-	$Body .= $message;
-	$Body .= "\n";
-	 
-	
-	// send email
-	$success = mail($EmailTo, $Subject, $Body, "From:".$email);
-	 
-	// redirect to success page
-	if ($success){
-	   echo "success";
-	}else{
-	    echo "invalid";
-	} 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
+
+  // Construct the email
+  $to = "your-email@example.com";
+  $subject = "New contact form submission";
+  $body = "Name: $name\nEmail: $email\nMessage: $message";
+  
+  // Send the email
+  $headers = "From: $email";
+  if (mail($to, $subject, $body, $headers)) {
+    echo "Email sent successfully";
+  } else {
+    echo "There was a problem sending the email";
+  }
+}
 ?>
